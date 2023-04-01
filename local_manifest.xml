@@ -2,14 +2,16 @@
 <manifest>
 	<!--Remote/-->
 	<remote name="dhp" fetch="https://github.com/DHAMPOT" />
+	<remote name="px" fetch="https://github.com/PixelExperience" />
 	<remote name="pxl" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
 	<remote name="pxld" fetch="https://github.com/PixelExperience-Devices" />
 	
 	<!--Repo Device/-->
-	<project path="device/xiaomi/platina" name="device_xiaomi_platina" remote="dhp" revision="trece" />
-	<project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="pxld" revision="thirteen" clone-depth="1" />
+	<project path="device/xiaomi/platina" name="device_xiaomi_platina" remote="dhp" revision="trece" clone-depth="1" />
+	<project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="dhp" revision="trece" clone-depth="1" />
 	<project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_sdm660" remote="pxld" revision="thirteen" clone-depth="1" />
 	<project path="vendor/xiaomi/platina" name="vendor_xiaomi_platina" remote="pxl" revision="thirteen" clone-depth="1" />
 	<project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="pxl" revision="thirteen" clone-depth="1" />
+	<project path="hardware/xiaomi" name="hardware_xiaomi" remote="px" revision="thirteen" clone-depth="1" />
 
 </manifest>
