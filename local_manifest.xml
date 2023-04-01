@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<!--Remote/-->
-	<remote name="platina" fetch="https://github.com/arrow-platina" />
-	<remote name="d4rk" fetch="https://github.com/D4rkKnight21" />
-	<remote name="ardv" fetch="https://github.com/ArrowOS-Devices" />
-	<remote name="kd" fetch="https://github.com/kdrag0n" />
+	<remote name="dhp" fetch="https://github.com/DHAMPOT" />
+	<remote name="pxl" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+	<remote name="pxld" fetch="https://github.com/PixelExperience-Devices" />
 	
 	<!--Repo Device/-->
-	<project path="device/xiaomi/platina" name="android_device_xiaomi_platina" remote="platina" revision="arrow-13.0" />
-	<project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="platina" revision="arrow-13.0" />
-	<project path="kernel/xiaomi/sdm660" name="UGHTEA_platina" remote="d4rk" revision="eol" clone-depth="1" />
-	<project path="vendor/xiaomi/platina" name="android_vendor_xiaomi_platina" remote="platina" revision="arrow-13.0" clone-depth="1" />
-	<project path="vendor/xiaomi/sdm660-common" name="android_vendor_xiaomi_sdm660-common" remote="ardv" revision="arrow-12.0" />
-	<project path="device/xiaomi/extras" name="android_device_xiaomi_extras" remote="ardv" revision="arrow-12.0" />
-	
-	<!--Proton clang-->
-	<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" clone-depth="1" />
-		
-	<!--Sepolicy/-->
-	<!--remove-project name="android_device_qcom_sepolicy-legacy-um" path="device/qcom/sepolicy-legacy-um"/-->
-	<!--project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="platina" revision="arrow-12.0" /-->
+	<project path="device/xiaomi/platina" name="device_xiaomi_platina" remote="dhp" revision="trace" />
+	<project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="pxld" revision="thirteen" clone-depth="1" />
+	<project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_sdm660" remote="pxld" revision="thirteen" clone-depth="1" />
+	<project path="vendor/xiaomi/platina" name="vendor_xiaomi_platina" remote="pxl" revision="thirteen" clone-depth="1" />
+	<project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="pxl" revision="thirteen" clone-depth="1" />
 
 </manifest>
