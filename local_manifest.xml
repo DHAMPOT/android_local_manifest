@@ -6,7 +6,7 @@
 	<remote name="pxld" fetch="https://github.com/PixelExperience-Devices" />
 	
 	<!--Repo Device/-->
-	<project path="device/xiaomi/platina" name="device_xiaomi_platina" remote="dhp" revision="trace" />
+	<project path="device/xiaomi/platina" name="device_xiaomi_platina" remote="dhp" revision="trece" />
 	<project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="pxld" revision="thirteen" clone-depth="1" />
 	<project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_sdm660" remote="pxld" revision="thirteen" clone-depth="1" />
 	<project path="vendor/xiaomi/platina" name="vendor_xiaomi_platina" remote="pxl" revision="thirteen" clone-depth="1" />
